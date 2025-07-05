@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Swiper Carousel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: white;
+      }
+
+      .swiper-pagination-bullet {
+        background: white;
+        opacity: 0.6;
+      }
+
+      .swiper-pagination-bullet-active {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900">
+    <!-- Swiper -->
+    <div class="swiper h-[500px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide relative">
+          <img
+            src="https://source.unsplash.com/1600x600/?white-house"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 flex flex-col justify-center items-start p-8 sm:p-12"
+          >
+            <h2 class="text-white text-2xl sm:text-4xl font-bold mb-4 animate-fadeInUp">
+              Lorem Ipsum is simply dummy text
+            </h2>
+            <div class="space-x-4">
+              <button class="bg-red-600 px-6 py-2 text-white rounded shadow">
+                BUTTON
+              </button>
+              <button class="bg-red-600 px-6 py-2 text-white rounded shadow">
+                BUTTON
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide relative">
+          <img
+            src="https://source.unsplash.com/1600x600/?capitol"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 flex flex-col justify-center items-start p-8 sm:p-12"
+          >
+            <h2 class="text-white text-2xl sm:text-4xl font-bold mb-4 animate-fadeInUp">
+              Slide Two Title Goes Here
+            </h2>
+            <div class="space-x-4">
+              <button class="bg-red-600 px-6 py-2 text-white rounded shadow">
+                BUTTON
+              </button>
+              <button class="bg-red-600 px-6 py-2 text-white rounded shadow">
+                BUTTON
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide relative">
+          <img
+            src="https://source.unsplash.com/1600x600/?government"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 flex flex-col justify-center items-start p-8 sm:p-12"
+          >
+            <h2 class="text-white text-2xl sm:text-4xl font-bold mb-4 animate-fadeInUp">
+              Final Slide Title Here
+            </h2>
+            <div class="space-x-4">
+              <button class="bg-red-600 px-6 py-2 text-white rounded shadow">
+                BUTTON
+              </button>
+              <button class="bg-red-600 px-6 py-2 text-white rounded shadow">
+                BUTTON
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- Pagination dots -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper Initialization -->
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        effect: "fade", // Change to "slide", "cube", "coverflow", "flip" etc. for different effects
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!-- Optional Animations -->
+    <style>
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fadeInUp {
+        animation: fadeInUp 0.8s ease-in-out;
+      }
+    </style>
+  </body>
+</html>

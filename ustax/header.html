@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Dropdown Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .dropdown-enter {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    .dropdown-enter-active {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 200ms ease-out;
+    }
+    .dropdown-leave {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .dropdown-leave-active {
+      opacity: 0;
+      transform: translateY(-8px);
+      transition: all 150ms ease-in;
+    }
+  </style>
+</head>
+<body class="bg-white font-sans">
+
+  <!-- Header -->
+  <header class="border-b shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="https://via.placeholder.com/40" alt="Logo" class="w-10 h-10" />
+        <span class="text-sm font-bold text-red-600">US TAX DEALS</span>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-6 text-sm">
+        <a href="#" class="text-purple-600 font-semibold">Home</a>
+        <a href="#" class="text-gray-700 hover:text-purple-600">About Us</a>
+
+        <!-- Dropdown Wrapper -->
+        <div class="relative" id="desktop-services-wrapper">
+          <button id="desktop-services-toggle" class="flex items-center text-gray-700 hover:text-purple-600">
+            Services
+            <svg id="desktop-arrow" class="w-4 h-4 ml-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="desktop-dropdown" class="absolute top-10 left-0 w-52 bg-white shadow-md border rounded hidden opacity-0 transition-all">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Individual Tax Fill</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Business Tax Fill</a>
+
+            <!-- Nested Dropdown Example -->
+            <div class="group relative">
+              <button class="w-full flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                More Services
+                <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+              <div class="absolute left-full top-0 mt-0 ml-1 w-48 bg-white border rounded shadow-md hidden group-hover:block">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Payroll</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Bookkeeping</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="text-gray-700 hover:text-purple-600">Refund</a>
+        <a href="#" class="text-gray-700 hover:text-purple-600">Referral Program</a>
+        <a href="#" class="text-gray-700 hover:text-purple-600">Contact Us</a>
+      </nav>
+
+      <div class="hidden md:flex space-x-3">
+        <button class="px-4 py-1 rounded-full text-white bg-purple-400 hover:bg-purple-500 text-sm">Sign In</button>
+        <button class="px-4 py-1 rounded-full text-purple-500 border border-purple-400 text-sm hover:bg-purple-100">Sign Up</button>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button id="menu-toggle" class="md:hidden text-gray-700 z-50 relative">
+        <svg id="hamburger-icon" class="h-6 w-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="close-icon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-40 md:hidden">
+    <div class="p-6 space-y-4 text-sm">
+      <a href="#" class="block text-purple-600 font-semibold">Home</a>
+      <a href="#" class="block text-gray-700">About Us</a>
+
+      <!-- Mobile Dropdown -->
+<div id="mobile-services-wrapper">
+  <button id="mobile-services-toggle" class="w-full text-left text-gray-700 font-medium flex justify-between items-center">
+    Services
+    <svg id="mobile-arrow" class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  <div id="mobile-dropdown" class="pl-4 mt-2 space-y-1 hidden opacity-0 transition-all">
+    <a href="#" class="block text-gray-600">Individual Tax Fill</a>
+    <a href="#" class="block text-gray-600">Business Tax Fill</a>
+
+    <!-- ✅ Nested Dropdown -->
+    <div id="mobile-nested-wrapper">
+      <button id="mobile-nested-toggle" class="w-full text-left flex justify-between items-center text-gray-600">
+        More Services
+        <svg id="mobile-nested-arrow" class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <div id="mobile-nested-dropdown" class="pl-4 mt-2 space-y-1 hidden opacity-0 transition-all">
+        <a href="#" class="block text-gray-600">Payroll</a>
+        <a href="#" class="block text-gray-600">Bookkeeping</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <a href="#" class="block text-gray-700">Refund</a>
+      <a href="#" class="block text-gray-700">Referral Program</a>
+      <a href="#" class="block text-gray-700">Contact Us</a>
+
+      <div class="pt-4 flex space-x-3">
+        <button class="flex-1 py-1 text-white bg-purple-400 rounded-full">Sign In</button>
+        <button class="flex-1 py-1 text-purple-500 border border-purple-400 rounded-full">Sign Up</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-30 md:hidden"></div>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('overlay');
+    const hamburger = document.getElementById('hamburger-icon');
+    const close = document.getElementById('close-icon');
+
+    const desktopToggle = document.getElementById('desktop-services-toggle');
+    const desktopDropdown = document.getElementById('desktop-dropdown');
+    const desktopArrow = document.getElementById('desktop-arrow');
+    const desktopWrapper = document.getElementById('desktop-services-wrapper');
+
+    const mobileToggle = document.getElementById('mobile-services-toggle');
+    const mobileDropdown = document.getElementById('mobile-dropdown');
+    const mobileArrow = document.getElementById('mobile-arrow');
+    const mobileWrapper = document.getElementById('mobile-services-wrapper');
+// === Mobile Nested Dropdown ===
+const mobileNestedToggle = document.getElementById('mobile-nested-toggle');
+const mobileNestedDropdown = document.getElementById('mobile-nested-dropdown');
+const mobileNestedArrow = document.getElementById('mobile-nested-arrow');
+const mobileNestedWrapper = document.getElementById('mobile-nested-wrapper');
+
+mobileNestedToggle.addEventListener('click', (e) => {
+  e.stopPropagation();
+  const isHidden = mobileNestedDropdown.classList.contains('hidden');
+  if (isHidden) {
+    showDropdown(mobileNestedDropdown);
+    mobileNestedArrow.classList.add('rotate-180');
+  } else {
+    hideDropdown(mobileNestedDropdown);
+    mobileNestedArrow.classList.remove('rotate-180');
+  }
+});
+
+// === Close Nested Dropdown on Outside Click ===
+document.addEventListener('click', (e) => {
+  if (!mobileNestedWrapper.contains(e.target)) {
+    hideDropdown(mobileNestedDropdown);
+    mobileNestedArrow.classList.remove('rotate-180');
+  }
+});
+
+// === ESC Key Closes Nested Dropdown Too ===
+document.addEventListener('keydown', (e) => {
+  if (e.key === "Escape") {
+    hideDropdown(mobileNestedDropdown);
+    mobileNestedArrow.classList.remove('rotate-180');
+  }
+});
+
+    function showDropdown(dropdown) {
+      dropdown.classList.remove('hidden', 'opacity-0');
+      dropdown.classList.add('opacity-100');
+    }
+
+    function hideDropdown(dropdown) {
+      dropdown.classList.add('opacity-0');
+      setTimeout(() => dropdown.classList.add('hidden'), 150);
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      menu.classList.toggle('translate-x-full');
+      overlay.classList.toggle('hidden');
+      hamburger.classList.toggle('hidden');
+      close.classList.toggle('hidden');
+    });
+
+    overlay.addEventListener('click', () => {
+      menu.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+      hamburger.classList.remove('hidden');
+      close.classList.add('hidden');
+    });
+
+    desktopToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isHidden = desktopDropdown.classList.contains('hidden');
+      if (isHidden) {
+        showDropdown(desktopDropdown);
+        desktopArrow.classList.add('rotate-180');
+      } else {
+        hideDropdown(desktopDropdown);
+        desktopArrow.classList.remove('rotate-180');
+      }
+    });
+
+    mobileToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isHidden = mobileDropdown.classList.contains('hidden');
+      if (isHidden) {
+        showDropdown(mobileDropdown);
+        mobileArrow.classList.add('rotate-180');
+      } else {
+        hideDropdown(mobileDropdown);
+        mobileArrow.classList.remove('rotate-180');
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!desktopWrapper.contains(e.target)) {
+        hideDropdown(desktopDropdown);
+        desktopArrow.classList.remove('rotate-180');
+      }
+      if (!mobileWrapper.contains(e.target)) {
+        hideDropdown(mobileDropdown);
+        mobileArrow.classList.remove('rotate-180');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === "Escape") {
+        hideDropdown(desktopDropdown);
+        desktopArrow.classList.remove('rotate-180');
+        hideDropdown(mobileDropdown);
+        mobileArrow.classList.remove('rotate-180');
+
+        menu.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+        hamburger.classList.remove('hidden');
+        close.classList.add('hidden');
+      }
+    });
+  </script>
+
+</body>
+</html>
