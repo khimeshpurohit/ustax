@@ -1,40 +1,40 @@
 $(document).ready(function () {
     // Mobile Menu Toggle
-    $('#menu-toggle').on('click', function () {
-        console.log('sdhdhdsdhsdj')
-        $('#mobile-menu').toggleClass('translate-x-full');
-        $('#overlay').toggleClass('hidden');
-        $('#hamburger-icon').toggleClass('hidden');
-        $('#close-icon').toggleClass('hidden');
-    });
+    // $('#menu-toggle').on('click', function () {
+    //     console.log('sdhdhdsdhsdj')
+    //     $('#mobile-menu').toggleClass('translate-x-full');
+    //     $('#overlay').toggleClass('hidden');
+    //     $('#hamburger-icon').toggleClass('hidden');
+    //     $('#close-icon').toggleClass('hidden');
+    // });
 
-    $('#overlay').on('click', function () {
-        $('#mobile-menu').addClass('translate-x-full');
-        $(this).addClass('hidden');
-        $('#hamburger-icon').removeClass('hidden');
-        $('#close-icon').addClass('hidden');
-    });
+    // $('#overlay').on('click', function () {
+    //     $('#mobile-menu').addClass('translate-x-full');
+    //     $(this).addClass('hidden');
+    //     $('#hamburger-icon').removeClass('hidden');
+    //     $('#close-icon').addClass('hidden');
+    // });
 
     // Desktop Dropdown
-    $('#desktop-services-toggle').on('click', function (e) {
-        e.stopPropagation();
-        $('#desktop-dropdown').toggleClass('hidden opacity-0').toggleClass('opacity-100');
-        $('#desktop-arrow').toggleClass('rotate-180');
-    });
+    // $('#desktop-services-toggle').on('click', function (e) {
+    //     e.stopPropagation();
+    //     $('#desktop-dropdown').toggleClass('hidden opacity-0').toggleClass('opacity-100');
+    //     $('#desktop-arrow').toggleClass('rotate-180');
+    // });
 
-    // Mobile Dropdown
-    $('#mobile-services-toggle').on('click', function (e) {
-        e.stopPropagation();
-        $('#mobile-dropdown').toggleClass('hidden opacity-0').toggleClass('opacity-100');
-        $('#mobile-arrow').toggleClass('rotate-180');
-    });
+    // // Mobile Dropdown
+    // $('#mobile-services-toggle').on('click', function (e) {
+    //     e.stopPropagation();
+    //     $('#mobile-dropdown').toggleClass('hidden opacity-0').toggleClass('opacity-100');
+    //     $('#mobile-arrow').toggleClass('rotate-180');
+    // });
 
     // Mobile Nested Dropdown
-    $('#mobile-nested-toggle').on('click', function (e) {
-        e.stopPropagation();
-        $('#mobile-nested-dropdown').toggleClass('hidden opacity-0').toggleClass('opacity-100');
-        $('#mobile-nested-arrow').toggleClass('rotate-180');
-    });
+    // $('#mobile-nested-toggle').on('click', function (e) {
+    //     e.stopPropagation();
+    //     $('#mobile-nested-dropdown').toggleClass('hidden opacity-0').toggleClass('opacity-100');
+    //     $('#mobile-nested-arrow').toggleClass('rotate-180');
+    // });
 
     // Close dropdowns on outside click
     $(document).on('click', function (e) {
