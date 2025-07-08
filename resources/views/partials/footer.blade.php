@@ -1,8 +1,7 @@
-  <!-- Footer -->
-  <footer class="bg-purple-900 text-white mt-10">
+  <footer class="bg-primary text-white relative pt-10">
     <!-- Top Banner -->
     <div
-      class="bg-gradient-to-r from-red-400 to-purple-500 text-white p-4 flex justify-between items-center rounded-md max-w-5xl mx-auto mt-4">
+      class="bg-gradient-to-r from-red-400 to-purple-500 text-white p-4 flex justify-between items-center rounded-md w-5xl mx-auto absolute footer-banner">
       <div>
         <p class="font-medium">Not sure which tax prep option is for you?</p>
         <div class="text-sm mt-1 flex space-x-4">
@@ -11,13 +10,13 @@
           <span>⚙️ Service</span>
         </div>
       </div>
-      <button class="bg-white text-black text-sm px-4 py-2 rounded-full">Contact Us</button>
+      <button class="bg-white text-black text-sm px-4 py-2 rounded-full cursor-pointer">Contact Us</button>
     </div>
-    <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div class="container px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
 
       <!-- Logo Section -->
       <div class="flex flex-col items-start">
-        <img src="us_white_logo.svg" alt="US Tax Logo" class="mb-2" />
+        <img src="images/us_white_logo.svg" alt="US Tax Logo" class="mb-2" />
       </div>
 
       <!-- Company Links -->
@@ -68,13 +67,16 @@
 
     <!-- Bottom Links -->
     <div
-      class="border-t border-purple-700 text-sm text-gray-300 py-4 px-4 flex flex-col md:flex-row justify-between items-center">
+      class=" border-t border-purple-700 text-sm text-gray-300 py-4 px-4 ">
+
+      <div class="container flex flex-col md:flex-row justify-between items-center">
       <div class="space-x-4">
         <a href="#" class="hover:underline">Privacy Policy</a>
         <a href="#" class="hover:underline">Terms of Use</a>
       </div>
       <div class="mt-2 md:mt-0">
         © 2025 All Rights Reserved
+      </div>
       </div>
     </div>
   </footer>
