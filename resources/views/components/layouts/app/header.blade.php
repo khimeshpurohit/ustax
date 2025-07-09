@@ -6,7 +6,7 @@
 </head>
 
 <body class="min-h-screen bg-white dark:bg-zinc-800">
-    <flux:header container class="border-b border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
+    <!-- <flux:header container class=""> -->
         {{-- <flux:sidebar.toggle class="lg:hidden" icon="bars-2" inset="left" /> --}}
 
         {{-- <a href="{{ route('home') }}" class="ms-2 me-5 flex items-center space-x-2 rtl:space-x-reverse lg:ms-0"
@@ -18,7 +18,7 @@
 
         {{-- <flux:spacer /> --}}
 
-    </flux:header>
+    <!-- </flux:header> -->
 
     <!-- Mobile Menu -->
     {{-- <flux:sidebar stashable sticky
@@ -63,9 +63,9 @@
 
     {{ $slot }}
 
-    <flux:footer container class="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
+    <!-- <flux:footer container class="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900"> -->
         @include('partials.footer')
-    </flux:footer>
+    <!-- </flux:footer> -->
     @fluxScripts
 </body>
 
