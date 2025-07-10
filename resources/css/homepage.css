@@ -154,17 +154,22 @@ body {
 }
 
 /*header*/
-nav .active {
+nav .nav-link {
   position: relative;
 }
-nav .active::after {
+nav .nav-link::after {
+  content: "";
   position: absolute;
-  width: 100%;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
   height: 2px;
   background: #dc1d24;
-  content: "";
-  bottom: -4px;
-  left: 0;
+  transition: width 0.3s ease;
+}
+nav .nav-link:hover::after,
+nav .nav-link.active::after {
+  width: 100%;
 }
 .dropdown-enter {
   opacity: 0;
@@ -374,7 +379,8 @@ a:hover {
 }
 
 .parallax-section {
-  background-attachment: fixed;
+  background-image: url('../../public/images/slider1.svg');
+  background-color: #eaeefe;
   background-size: cover;
   background-position: center;
 }
