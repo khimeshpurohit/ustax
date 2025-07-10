@@ -13,7 +13,7 @@
 
               <div class="clearfix"></div>
               <div data-swiper-parallax="500" class="slide-btns">
-                <button class="mt-6 bg-secondary text-white rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Register
+                <button class="mt-6 bg-secondary text-white py-2 rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Register
                   now</button>
               </div>
             </div>
@@ -31,7 +31,7 @@
 
               <div class="clearfix"></div>
               <div data-swiper-parallax="500" class="slide-btns">
-                <button class="mt-6 bg-secondary text-white rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Register
+                <button class="mt-6 bg-secondary text-white py-2 rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Register
                   now</button>
               </div>
             </div>
@@ -53,7 +53,7 @@
 
 
  <!---about  -->
-  <section class="bg-white py-6 md:py-16 container" >
+  <section class="bg-white py-16 container" >
     <div class=" grid md:grid-cols-2 gap-10 items-center">
 
       <!-- Text Content -->
@@ -68,7 +68,7 @@
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
         </p>
         <a href="#"
-          class="mt-6 bg-secondary text-white  rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">
+          class="mt-6 bg-secondary text-white py-2 rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">
           More Details
         </a>
       </div>
@@ -93,10 +93,10 @@
 
   <!--- tag line -->
 
-  <section class=" parallax-section bg-fixed bg-cover bg-center bg-no-repeat bg-body-img  container flex items-center justify-center mx-auto mt-6 md:mt-0">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-6 bg-[#042b52] rounded-lg  m-10 md:m-32 max-w-[50%]">
+  <section class=" parallax-section bg-fixed bg-cover bg-center bg-no-repeat bg-body-img  container flex items-center justify-center mx-auto">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6 bg-[#042b52] rounded-lg m-32 max-w-[50%]">
       <!-- Quote -->
-      <div class="text-white text-center text-lg  md:text-3xl font-semibold leading-relaxed">
+      <div class="text-white text-center text-xl md:text-3xl font-semibold leading-relaxed">
         "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
       </div>
 
@@ -108,7 +108,7 @@
   </section>
   <!--we offer -->
 
-  <section class="py-6 md:py-16 container">
+  <section class="py-16 container">
     <div class="container">
 
       <!-- Heading and Description -->
@@ -253,7 +253,7 @@
 
   <!-- how us deal-->
 
-  <section class="py-6 md:py-16 bg-white " >
+  <section class="py-16 bg-white " >
     <div class="container">
 
       <!-- Heading -->
@@ -268,32 +268,32 @@
 
         <!-- Icon 1 -->
         <div class="flex flex-col items-center border border-transparent hover:border-red-500 hover:shadow-md transform hover:scale-105 transition-all duration-300 rounded-xl p-4 hover:bg-red-50" data-aos="zoom-in">
-          <img src="images/how_us.svg" alt="Service 1" class="w-20 md:w-full mb-2">
-          <span class="text-sm md:text-base text-black">Service 1</span>
+          <img src="images/how_us.svg" alt="Service 1" class="mb-2">
+          <span class="text-sm text-black">Service 1</span>
         </div>
 
         <!-- Icon 2 -->
         <div class="flex flex-col items-center border border-transparent hover:border-red-500 hover:shadow-md transform hover:scale-105 transition-all duration-300 rounded-xl p-4 hover:bg-red-50" data-aos="zoom-in">
-          <img src="images/how_us1.svg" alt="Service 2" class="w-20 md:w-full mb-2">
-          <span class="text-sm md:text-base text-black">Service 2</span>
+          <img src="images/how_us1.svg" alt="Service 2" class="mb-2">
+          <span class="text-sm text-black">Service 2</span>
         </div>
 
         <!-- Icon 3 -->
         <div class="flex flex-col items-center border border-transparent hover:border-red-500 hover:shadow-md transform hover:scale-105 transition-all duration-300 rounded-xl p-4 hover:bg-red-50" data-aos="zoom-in">
-          <img src="images/how_us2.svg" alt="Service 3" class=" w-20 md:w-full mb-2">
-          <span class="text-sm md:text-base text-black">Service 3</span>
+          <img src="images/how_us2.svg" alt="Service 3" class="mb-2">
+          <span class="text-sm text-black">Service 3</span>
         </div>
 
         <!-- Icon 4 -->
         <div class="flex flex-col items-center border border-transparent hover:border-red-500 hover:shadow-md transform hover:scale-105 transition-all duration-300 rounded-xl p-4 hover:bg-red-50" data-aos="zoom-in">
-          <img src="images/how_us3.svg" alt="Service 4" class="w-20 md:w-full mb-2">
-          <span class="text-sm md:text-base text-black">Service 4</span>
+          <img src="images/how_us3.svg" alt="Service 4" class="mb-2">
+          <span class="text-sm text-black">Service 4</span>
         </div>
 
         <!-- Icon 5 -->
         <div class="flex flex-col items-center border border-transparent hover:border-red-500 hover:shadow-md transform hover:scale-105 transition-all duration-300 rounded-xl p-4 hover:bg-red-50" data-aos="zoom-in">
-          <img src="images/how_us4.svg" alt="Service 5" class=" w-20 md:w-full mb-2">
-          <span class="text-sm md:text-base text-black">Service 5</span>
+          <img src="images/how_us4.svg" alt="Service 5" class="mb-2">
+          <span class="text-sm text-black">Service 5</span>
         </div>
 
       </div>
@@ -339,7 +339,7 @@
                   class="w-full border border-secondary rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
               </div>
               <button type="submit"
-                class="mt-6 bg-secondary text-white rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Submit</button>
+                class="mt-6 bg-secondary text-white py-2 rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Submit</button>
             </form>
           </div>
         </div>

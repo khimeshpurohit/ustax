@@ -215,7 +215,7 @@
         </svg>
       </button>
     </div>
-    <div class="p-6 space-y-4 text-sm h-full overflow-y-auto">
+    <div class="p-6 space-y-4 text-sm">
       <a href={{ route('home') }} class="nav-link block text-primary " wire:navigate>Home</a>
       <a href={{ route('about') }} class="nav-link block text-black" wire:navigate>About Us</a>
 
