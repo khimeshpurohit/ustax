@@ -13,7 +13,7 @@
 
               <div class="clearfix"></div>
               <div data-swiper-parallax="500" class="slide-btns">
-                <button class="text-white p-3 bg-secondary hover:bg-primary rounded-md cursor-pointer">Register
+                <button class="mt-6 bg-secondary text-white py-2 rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Register
                   now</button>
               </div>
             </div>
@@ -31,7 +31,7 @@
 
               <div class="clearfix"></div>
               <div data-swiper-parallax="500" class="slide-btns">
-                <button class="text-white p-3 bg-secondary hover:bg-primary rounded-md cursor-pointer">Register
+                <button class="mt-6 bg-secondary text-white py-2 rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Register
                   now</button>
               </div>
             </div>
@@ -53,11 +53,11 @@
 
 
  <!---about  -->
-  <section class="bg-white py-16 container"  data-aos="fade-up">
+  <section class="bg-white py-16 container" >
     <div class=" grid md:grid-cols-2 gap-10 items-center">
 
       <!-- Text Content -->
-      <div>
+      <div data-aos="fade-left">
         <div class="mb-6">
           <h2 class="text-3xl md:text-3xl font-500 mb-4">About US Tax Deals</h2>
           <div class="h-1 w-16 bg-red-500 mt-2 rounded"></div>
@@ -68,13 +68,13 @@
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
         </p>
         <a href="#"
-          class="inline-block px-5 py-2 bg-primary text-white text-sm rounded shadow hover:bg-secondary transition">
+          class="mt-6 bg-secondary text-white py-2 rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">
           More Details
         </a>
       </div>
 
       <!-- Image Section -->
-      <div class="relative flex justify-center">
+      <div class="relative flex justify-center" data-aos="fade-right">
         <!-- Background Image (blue chart) -->
         <div class="w-40 h-40 md:w-[350px] md:h-[350px] rounded-lg overflow-hidden shadow-lg border-4 border-red-500">
           <img src="images/aboutus.svg" alt="chart" class="w-full h-full object-cover">
@@ -93,22 +93,22 @@
 
   <!--- tag line -->
 
-  <section class="bg-[#042b52] rounded-lg pt-16">
-    <div class="container flex flex-col md:flex-row items-center justify-between gap-6">
+  <section class=" parallax-section bg-fixed bg-cover bg-center bg-no-repeat bg-body-img  container flex items-center justify-center mx-auto">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6 bg-[#042b52] rounded-lg m-32 max-w-[50%]">
       <!-- Quote -->
-      <div class="text-white text-center md:text-left text-xl md:text-3xl font-semibold leading-relaxed max-w-xl">
+      <div class="text-white text-center text-xl md:text-3xl font-semibold leading-relaxed">
         "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
       </div>
 
       <!-- Image -->
-      <div class="">
+      <!-- <div class="-mt-48">
         <img src="images/tag.svg" alt="Person" class="object-cover rounded-md w-[80%]">
       </div>
-    </div>
+    </div> -->
   </section>
   <!--we offer -->
 
-  <section class="py-16 parallax-section bg-[url('images/slider1.svg')] bg-fixed bg-cover bg-center">
+  <section class="py-16 container">
     <div class="container">
 
       <!-- Heading and Description -->
@@ -127,7 +127,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
         <!-- Card -->
-        <div class="bg-rose-50 p-6 rounded-lg text-center shadow hover:shadow-md transition">
+        <div class="bg-rose-50 p-6 rounded-lg text-center shadow-lg transform hover:-translate-y-2 hover:scale-105 transition-all duration-300">
           <img src="images/we_offer.svg" alt="Icon 1" class="mx-auto mb-4">
           <h3 class="text-lg font-semibold mb-2">Lorem Ipsum</h3>
           <p class="text-sm text-gray-600">
@@ -135,7 +135,7 @@
           </p>
         </div>
 
-        <div class="bg-blue-50 p-6 rounded-lg text-center shadow hover:shadow-md transition">
+        <div class="bg-blue-50 p-6 rounded-lg text-center shadow-lg transform hover:-translate-y-2 hover:scale-105 transition-all duration-300">
           <img src="images/we_offer1.svg" alt="Icon 2" class="mx-auto mb-4">
           <h3 class="text-lg font-semibold mb-2">Lorem Ipsum</h3>
           <p class="text-sm text-gray-600">
@@ -143,7 +143,7 @@
           </p>
         </div>
 
-        <div class="bg-indigo-50 p-6 rounded-lg text-center shadow hover:shadow-md transition">
+        <div class="bg-indigo-50 p-6 rounded-lg text-center shadow-lg transform hover:-translate-y-2 hover:scale-105 transition-all duration-300">
           <img src="images/we_offer2.svg" alt="Icon 3" class="mx-auto mb-4">
           <h3 class="text-lg font-semibold mb-2">Lorem Ipsum</h3>
           <p class="text-sm text-gray-600">
@@ -151,7 +151,7 @@
           </p>
         </div>
 
-        <div class="bg-cyan-50 p-6 rounded-lg text-center shadow hover:shadow-md transition">
+        <div class="bg-cyan-50 p-6 rounded-lg text-center shadow-lg transform hover:-translate-y-2 hover:scale-105 transition-all duration-300">
           <img src="images/we_offer3.svg" alt="Icon 4" class="mx-auto mb-4">
           <h3 class="text-lg font-semibold mb-2">Lorem Ipsum</h3>
           <p class="text-sm text-gray-600">
@@ -159,7 +159,7 @@
           </p>
         </div>
 
-        <div class="bg-pink-50 p-6 rounded-lg text-center shadow hover:shadow-md transition">
+        <div class="bg-pink-50 p-6 rounded-lg text-center shadow-lg transform hover:-translate-y-2 hover:scale-105 transition-all duration-300">
           <img src="images/we_offer4.svg" alt="Icon 5" class="mx-auto mb-4">
           <h3 class="text-lg font-semibold mb-2">Lorem Ipsum</h3>
           <p class="text-sm text-gray-600">
@@ -167,7 +167,7 @@
           </p>
         </div>
 
-        <div class="bg-amber-50 p-6 rounded-lg text-center shadow hover:shadow-md transition">
+        <div class="bg-amber-50 p-6 rounded-lg text-center shadow-lg transform hover:-translate-y-2 hover:scale-105 transition-all duration-300">
           <img src="images/we_offer5.svg" alt="Icon 6" class="mx-auto mb-4">
           <h3 class="text-lg font-semibold mb-2">Lorem Ipsum</h3>
           <p class="text-sm text-gray-600">
@@ -253,7 +253,7 @@
 
   <!-- how us deal-->
 
-  <section class="py-16 bg-white "  data-aos="zoom-in">
+  <section class="py-16 bg-white " >
     <div class="container">
 
       <!-- Heading -->
@@ -267,31 +267,31 @@
       <div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
 
         <!-- Icon 1 -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center border border-transparent hover:border-red-500 hover:shadow-md transform hover:scale-105 transition-all duration-300 rounded-xl p-4 hover:bg-red-50" data-aos="zoom-in">
           <img src="images/how_us.svg" alt="Service 1" class="mb-2">
           <span class="text-sm text-black">Service 1</span>
         </div>
 
         <!-- Icon 2 -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center border border-transparent hover:border-red-500 hover:shadow-md transform hover:scale-105 transition-all duration-300 rounded-xl p-4 hover:bg-red-50" data-aos="zoom-in">
           <img src="images/how_us1.svg" alt="Service 2" class="mb-2">
           <span class="text-sm text-black">Service 2</span>
         </div>
 
         <!-- Icon 3 -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center border border-transparent hover:border-red-500 hover:shadow-md transform hover:scale-105 transition-all duration-300 rounded-xl p-4 hover:bg-red-50" data-aos="zoom-in">
           <img src="images/how_us2.svg" alt="Service 3" class="mb-2">
           <span class="text-sm text-black">Service 3</span>
         </div>
 
         <!-- Icon 4 -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center border border-transparent hover:border-red-500 hover:shadow-md transform hover:scale-105 transition-all duration-300 rounded-xl p-4 hover:bg-red-50" data-aos="zoom-in">
           <img src="images/how_us3.svg" alt="Service 4" class="mb-2">
           <span class="text-sm text-black">Service 4</span>
         </div>
 
         <!-- Icon 5 -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center border border-transparent hover:border-red-500 hover:shadow-md transform hover:scale-105 transition-all duration-300 rounded-xl p-4 hover:bg-red-50" data-aos="zoom-in">
           <img src="images/how_us4.svg" alt="Service 5" class="mb-2">
           <span class="text-sm text-black">Service 5</span>
         </div>
@@ -339,7 +339,7 @@
                   class="w-full border border-secondary rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
               </div>
               <button type="submit"
-                class="bg-primary text-white px-6 py-2 rounded-md hover:bg-secondary transition">Submit</button>
+                class="mt-6 bg-secondary text-white py-2 rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Submit</button>
             </form>
           </div>
         </div>

@@ -22,8 +22,8 @@
       <!-- Company Links -->
       <div>
         <h3 class="font-bold mb-3">Company</h3>
-        <ul class="space-y-1 text-sm">
-          <li><a href="#">About Us</a></li>
+        <ul class="space-y-1 text-sm nav">
+          <li class="nav-link"><a href="#" >About Us</a></li>
           <li><a href="#">Refund</a></li>
           <li><a href="#">Referral Program</a></li>
           <li><a href="#">Contact Us</a></li>
