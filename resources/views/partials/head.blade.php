@@ -13,5 +13,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-@vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/homepage.css','resources/js/homepage.js'])
+
+<link href="{{ asset('/css/homepage.css') }}" rel="stylesheet">
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 @fluxAppearance
