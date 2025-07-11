@@ -1,7 +1,7 @@
   <footer class="bg-primary text-white relative pt-10">
     <!-- Top Banner -->
     <div
-      class="bg-gradient-to-r from-red-400 to-purple-500 text-white p-4 flex justify-between items-center rounded-md w-5xl mx-auto absolute footer-banner">
+      class="bg-gradient-to-r from-red-400 to-purple-500 text-white p-4 flex justify-between items-center rounded-md w-[75%] mx-auto absolute footer-banner">
       <div>
         <p class="font-medium">Not sure which tax prep option is for you?</p>
         <div class="text-sm mt-1 flex space-x-4">

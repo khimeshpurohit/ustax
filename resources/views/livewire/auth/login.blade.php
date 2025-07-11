@@ -14,6 +14,7 @@
             autofocus
             autocomplete="email"
             placeholder="email@example.com"
+            class=""
         />
 
         <!-- Password -->
@@ -39,7 +40,7 @@
         <flux:checkbox wire:model="remember" :label="__('Remember me')" />
 
         <div class="flex items-center justify-end">
-            <flux:button variant="primary" type="submit" class="w-full">{{ __('Log in') }}</flux:button>
+            <flux:button class="mt-6 bg-secondary text-white rounded-full cursor-pointer hover:bg-primary transition px-5 py-2" type="submit" class="w-full">{{ __('Log in') }}</flux:button>
         </div>
     </form>
 

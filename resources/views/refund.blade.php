@@ -1,33 +1,106 @@
 <x-layouts.app :title="__('Refund')">   
-    <div class="container mx-auto px-4 py-8">
-        <h1 class="text-2xl font-bold mb-4">{{ __('Refund Request') }}</h1>
-        <p class="mb-6">{{ __('If you are not satisfied with your purchase, you can request a refund within 30 days of the purchase date.') }}</p>
-        
-        <form action="{{ route('home') }}" method="POST" class="space-y-4">
-            @csrf
-            <div>
-                <label for="order_id" class="block text-sm font-medium text-gray-700">{{ __('Order ID') }}</label>
-                <input type="text" id="order_id" name="order_id" required
-                       class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
-            </div>
-            <div>
-                <label for="reason" class="block text-sm font-medium text-gray-700">{{ __('Reason for Refund') }}</label>
-                <textarea id="reason" name="reason" rows="4" required
-                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"></textarea>
-            </div>
-            <button type="submit"
-                    class="inline-flex items-center px-4 py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                {{ __('Submit Refund Request') }}
-            </button>
-        </form>
+ <!-- Section: Header -->
+  <section class="py-16 bg-white parallax-section text-white" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold mb-4">Federal and State Tax Filing</h1>
+      <p class="text-lg max-w-2xl mx-auto">
+        At <span class="font-semibold">[Your Company Name]</span>, we take pride in delivering precise, secure, and compliant tax filing services.
+      </p>
+    </div>
+  </section>
 
-        <div class="mt-8">
-            <h2 class="text-xl font-semibold mb-2">{{ __('Refund Policy') }}</h2>
-            <ul class="list-disc pl-5 space-y-2">
-                <li>{{ __('Refunds are processed within 7 business days.') }}</li>
-                <li>{{ __('You will receive a confirmation email once your refund is processed.') }}</li>
-                <li>{{ __('Please ensure that you provide accurate information to avoid delays.') }}</li>
-            </ul>
+  <!-- Section: Highlights -->
+  <section class="py-12 bg-gray-100" data-aos="fade-up" data-aos-delay="100">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Why Choose Us?</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Registered Electronic Return Originators (ERO)</li>
+          <li>Compliant with IRS Guidelines & Circular 230</li>
+          <li>Staffed by CPAs, EAs, CAs, and PTIN holders</li>
+          <li>Legally secure e-filing & paper filing options</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Comprehensive Services Include:</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>W-4 Assistance & ITIN Applications</li>
+          <li>Passport Certification & IRS Filing</li>
+          <li>Federal & State Returns (Resident & Non-Resident)</li>
+          <li>Amended Returns, Extensions, FBAR & FATCA Compliance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Process -->
+  <section class="py-16 bg-white" data-aos="fade-up" data-aos-delay="200">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">Our Filing Process</h2>
+      <div class="grid md:grid-cols-2 gap-10 text-gray-700">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">1. Detailed Analysis</h3>
+          <p>We review your documents to find all eligible deductions and credits.</p>
         </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">2. Quality Assurance</h3>
+          <p>Multi-level review by qualified professionals for accuracy.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">3. Electronic Signature</h3>
+          <p>Returns are securely signed and e-filed for quicker processing.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">4. Expedited Non-Resident Filing</h3>
+          <p>Tracked paper filings for faster processing of non-resident returns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Tax Planning -->
+  <section class="py-16 bg-gray-100" data-aos="fade-up" data-aos-delay="300">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">Advanced Tax Planning</h2>
+      <ul class="list-disc list-inside text-gray-700 max-w-3xl mx-auto space-y-2">
+        <li>Itemized vs. Standard Deductions Evaluation</li>
+        <li>Stock Option & ESPP Strategies</li>
+        <li>Rental Income/Loss Tax Planning</li>
+        <li>Investment Advice: 401(k), IRA, and more</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section: Offers -->
+  <section class="py-16 bg-white" data-aos="fade-up" data-aos-delay="400">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Special Offers</h2>
+      <p class="text-gray-600 mb-2">✅ Free Refund Estimate within 24–36 hours</p>
+      <p class="text-gray-600">✅ Complimentary 3-Year Tax Evaluation (TY2022–TY2024)</p>
+    </div>
+  </section>
+
+  <!-- Section: Key Services -->
+  <section class="py-16 bg-gray-800 text-white" data-aos="fade-up" data-aos-delay="500">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Our Key Services</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
+        <p>✔️ Federal & State Tax Filing</p>
+        <p>✔️ Professional Tax Representation</p>
+        <p>✔️ ITIN Preparation & Certification</p>
+        <p>✔️ Proactive Tax Planning</p>
+        <p>✔️ FATCA & FBAR Compliance</p>
+        <p>✔️ Amendment Filing</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Closing -->
+  <section class="py-12 bg-red-600 text-white text-center" data-aos="fade-up" data-aos-delay="600">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-2">Let [Your Company Name] Handle Your Taxes with Confidence</h2>
+      <p>Precision, integrity, and expert guidance — for peace of mind and financial clarity.</p>
+    </div>
+  </section>
 
 </x-layouts.app>
