@@ -4,11 +4,11 @@
         @include('partials.head')
     </head>
     <body class="min-h-screen bg-neutral-100 antialiased dark:bg-linear-to-b dark:from-neutral-950 dark:to-neutral-900">
-        <flux:header container class="border-b border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
+        {{-- <flux:header container class="border-b border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900"> --}}
             @include('partials.navbar')    
             <flux:spacer />    
            
-        </flux:header>
+        {{-- </flux:header> --}}
     
         <!-- Mobile Menu -->
         {{-- <flux:sidebar stashable sticky
@@ -69,9 +69,9 @@
             </div>
         </div>
 
-        <flux:footer container class="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
+        {{-- <flux:footer container class="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900"> --}}
             @include('partials.footer')
-        </flux:footer>
+        {{-- </flux:footer> --}}
         @fluxScripts
     </body>
 </html>
