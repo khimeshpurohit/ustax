@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Roboto-Serif";
-  src: url("../../public/fonts/RobotoSerif-Medium.woff2") format("woff2"),
-    url("../../public/fonts/RobotoSerif-Medium.woff") format("woff"),
-    url("../../public/fonts/RobotoSerif-Medium.ttf") format("truetype");
+  src: url("../fonts/RobotoSerif-Medium.woff2") format("woff2"),
+    url("../fonts/RobotoSerif-Medium.woff") format("woff"),
+    url("../fonts/RobotoSerif-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -10,9 +10,9 @@
 
 @font-face {
   font-family: "Roboto-Serif";
-  src: url("../../public/fonts/RobotoSerif-Light.woff2") format("woff2"),
-    url("../../public/fonts/RobotoSerif-Light.woff") format("woff"),
-    url("../../public/fonts/RobotoSerif-Light.ttf") format("truetype");
+  src: url("../fonts/RobotoSerif-Light.woff2") format("woff2"),
+    url("../fonts/RobotoSerif-Light.woff") format("woff"),
+    url("../fonts/RobotoSerif-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -20,9 +20,9 @@
 
 @font-face {
   font-family: "Roboto-Serif";
-  src: url("../../public/fonts/RobotoSerif-Regular.woff2") format("woff2"),
-    url("../../public/fonts/RobotoSerif-Regular.woff") format("woff"),
-    url("../../public/fonts/RobotoSerif-Regular.ttf") format("truetype");
+  src: url("../fonts/RobotoSerif-Regular.woff2") format("woff2"),
+    url("../fonts/RobotoSerif-Regular.woff") format("woff"),
+    url("../fonts/RobotoSerif-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -30,9 +30,9 @@
 
 @font-face {
   font-family: "Roboto-Serif";
-  src: url("../../public/fonts/RobotoSerif-Bold.woff2") format("woff2"),
-    url("../../public/fonts/RobotoSerif-Bold.woff") format("woff"),
-    url("../../public/fonts/RobotoSerif-Bold.ttf") format("truetype");
+  src: url("../fonts/RobotoSerif-Bold.woff2") format("woff2"),
+    url("../fonts/RobotoSerif-Bold.woff") format("woff"),
+    url("../fonts/RobotoSerif-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -154,17 +154,22 @@ body {
 }
 
 /*header*/
-nav .active {
+nav .nav-link {
   position: relative;
 }
-nav .active::after {
+nav .nav-link::after {
+  content: "";
   position: absolute;
-  width: 100%;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
   height: 2px;
   background: #dc1d24;
-  content: "";
-  bottom: -4px;
-  left: 0;
+  transition: width 0.3s ease;
+}
+nav .nav-link:hover::after,
+nav .nav-link.active::after {
+  width: 100%;
 }
 .dropdown-enter {
   opacity: 0;
@@ -359,7 +364,13 @@ nav .active::after {
 
 /*---contact ---*/
 .bg-contact {
-  background-image: url('../../public/images/contact.svg');
+  background-image: url('../images/contact.svg');
+  background-color: #eaeefe;
+  background-size: cover;
+  background-position: center;
+}
+.bg-mob-contact {
+  background-image: url('../images/mob-contact.svg');
   background-color: #eaeefe;
   background-size: cover;
   background-position: center;
@@ -374,7 +385,8 @@ a:hover {
 }
 
 .parallax-section {
-  background-attachment: fixed;
+  background-image: url('../images/slider1.svg');
+  background-color: #eaeefe;
   background-size: cover;
   background-position: center;
 }
@@ -414,9 +426,7 @@ a:hover {
   .hero-slider .swiper-button-next {
     display: none;
   }
-  .hero-style {
-    height: 500px;
-  }
+  
   .hero-style .slide-title h2 {
     font-size: 35px;
     margin: 0 0 30px;
@@ -430,7 +440,12 @@ a:hover {
     font-weight: normal;
     margin: 0 0 30px;
   }
-  .hero-slider {
-    height: 500px;
+  .hero-slider ,.hero-style {
+    height: 400px;
+  }
+  .footer-banner{
+    top: 0 ;
+    left:0;
+    transform: none;
   }
 }

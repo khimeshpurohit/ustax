@@ -3,6 +3,7 @@
       $('#menu-toggle').on('click', function () {
         $('#mobile-menu').toggleClass('translate-x-full');
         $('#overlay').toggleClass('hidden');
+        $('body').toggleClass('overflow-hidden');
       });
 
       $('#overlay').on('click', function () {
