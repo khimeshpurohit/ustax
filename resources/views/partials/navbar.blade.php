@@ -3,7 +3,7 @@
   <header class="border-b shadow-sm z-10">
     <div class="container flex py-4 justify-between items-center">
       <div class="flex items-center space-x-3">
-        <img src="images/logo.svg" alt="Logo" class="w-20 h-20" />
+        <img src="images/logo.svg" alt="Logo" class="w-10 h-10md:w-20 md:h-20" />
 
       </div>
 
@@ -133,8 +133,8 @@
   
 
       <!-- Mobile Toggle -->
-       <div class="lg:hidden">
-         <div class="pt-4 flex space-x-3">
+       <div class="lg:hidden flex gap-3 items-center">
+         <div class="flex space-x-3">
                 @auth
                 <!-- Mobile User Menu -->
                 <flux:dropdown position="top" align="end">
@@ -181,13 +181,13 @@
             @else
                 <!-- Mobile Auth Links -->
                 <div class="lg:flex items-center space-x-4 rtl:space-x-reverse">
-                    <a href="{{ route('login') }}" class="px-4 py-1 rounded-full text-white bg-primary hover:bg-secondary text-base cursor-pointer"
+                    <a href="{{ route('login') }}" class="px-4 py-1 rounded-full text-white bg-primary hover:bg-secondary text-sm cursor-pointer"
                         wire:navigate>
                         {{ __('Sign In') }}
                     </a>
                     @if (Route::has('register'))
                         <a href="{{ route('register') }}"
-                            class="px-4 py-1 rounded-full text-primary border border-primary text-base hover:bg-primary cursor-pointer hover:text-white" wire:navigate>
+                            class="px-4 py-1 rounded-full text-primary border border-primary text-sm hover:bg-primary cursor-pointer hover:text-white" wire:navigate>
                             {{ __('Sign Up') }}
                         </a>
                     @endif

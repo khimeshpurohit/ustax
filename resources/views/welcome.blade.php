@@ -8,12 +8,16 @@
           <div class="slide-inner slide-bg-image" data-background="images/slider1.svg">
             <div class="container">
               <div data-swiper-parallax="300" class="slide-title">
-                <h2>Lorem ipsome</h2>
+                <h2 class="text-base md:text-2xl">Lorem ipsome</h2>
               </div>
 
               <div class="clearfix"></div>
               <div data-swiper-parallax="500" class="slide-btns">
+<<<<<<< HEAD
                 <button class="mt-6 bg-secondary text-white py-2 rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Register
+=======
+                <button class="mt-6 bg-secondary text-white rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Register
+>>>>>>> feat/frontend-home
                   now</button>
               </div>
             </div>
@@ -31,7 +35,11 @@
 
               <div class="clearfix"></div>
               <div data-swiper-parallax="500" class="slide-btns">
+<<<<<<< HEAD
                 <button class="mt-6 bg-secondary text-white py-2 rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Register
+=======
+                <button class="mt-6 bg-secondary text-white rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Register
+>>>>>>> feat/frontend-home
                   now</button>
               </div>
             </div>
@@ -68,7 +76,11 @@
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
         </p>
         <a href="#"
+<<<<<<< HEAD
           class="mt-6 bg-secondary text-white py-2 rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">
+=======
+          class="mt-6 bg-secondary text-white  rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">
+>>>>>>> feat/frontend-home
           More Details
         </a>
       </div>
@@ -339,7 +351,11 @@
                   class="w-full border border-secondary rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
               </div>
               <button type="submit"
+<<<<<<< HEAD
                 class="mt-6 bg-secondary text-white py-2 rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Submit</button>
+=======
+                class="mt-6 bg-secondary text-white rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Submit</button>
+>>>>>>> feat/frontend-home
             </form>
           </div>
         </div>
