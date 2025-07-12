@@ -369,6 +369,12 @@ nav .nav-link.active::after {
   background-size: cover;
   background-position: center;
 }
+.bg-mob-contact {
+  background-image: url('../../public/images/mob-contact.svg');
+  background-color: #eaeefe;
+  background-size: cover;
+  background-position: center;
+}
 .footer-banner{
     top: -40px;
     left: 50%;
@@ -420,9 +426,7 @@ a:hover {
   .hero-slider .swiper-button-next {
     display: none;
   }
-  .hero-style {
-    height: 500px;
-  }
+  
   .hero-style .slide-title h2 {
     font-size: 35px;
     margin: 0 0 30px;
@@ -436,7 +440,12 @@ a:hover {
     font-weight: normal;
     margin: 0 0 30px;
   }
-  .hero-slider {
-    height: 500px;
+  .hero-slider ,.hero-style {
+    height: 400px;
+  }
+  .footer-banner{
+    top: 0 ;
+    left:0;
+    transform: none;
   }
 }

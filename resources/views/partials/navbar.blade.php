@@ -3,7 +3,7 @@
   <header class="border-b shadow-sm z-10">
     <div class="container flex py-4 justify-between items-center">
       <div class="flex items-center space-x-3">
-        <img src="images/logo.svg" alt="Logo" class="w-10 h-10md:w-20 md:h-20" />
+        <img src="images/logo.svg" alt="Logo" class="w-10 h-10 md:w-20 md:h-20" />
 
       </div>
 
@@ -215,7 +215,7 @@
         </svg>
       </button>
     </div>
-    <div class="p-6 space-y-4 text-sm">
+    <div class="p-6 space-y-4 text-sm h-full overflow-y-auto">
       <a href={{ route('home') }} class="nav-link block text-primary " wire:navigate>Home</a>
       <a href={{ route('about') }} class="nav-link block text-black" wire:navigate>About Us</a>
 
