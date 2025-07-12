@@ -17,7 +17,7 @@
 
       <!-- Logo Section -->
       <div class="flex flex-col items-start">
-        <img src="{{ asset('images/logo.svg') }}" alt="US Tax Logo" class="mb-2" />
+        <img src="{{ asset('images/us_white_logo.svg') }}" alt="US Tax Logo" class="mb-2" />
       </div>
 
       <!-- Company Links -->
