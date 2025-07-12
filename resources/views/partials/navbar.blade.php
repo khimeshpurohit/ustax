@@ -3,11 +3,7 @@
   <header class="border-b shadow-sm z-10">
     <div class="container flex py-4 justify-between items-center">
       <div class="flex items-center space-x-3">
-<<<<<<< Updated upstream
-        <img src="images/logo.svg" alt="Logo" class="w-10 h-10 md:w-20 md:h-20" />
-=======
         <img src="{{ asset('images/logo.svg') }}" alt="Logo" class="w-10 h-10md:w-20 md:h-20" />
->>>>>>> Stashed changes
 
       </div>
 
