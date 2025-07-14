@@ -154,10 +154,10 @@ body {
 }
 
 /*header*/
-nav .nav-link {
+nav .nav-link,.nav .nav-link {
   position: relative;
 }
-nav .nav-link::after {
+nav .nav-link::after,.nav .nav-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -167,7 +167,7 @@ nav .nav-link::after {
   background: #dc1d24;
   transition: width 0.3s ease;
 }
-nav .nav-link:hover::after,
+nav .nav-link:hover::after,.nav .nav-link:hover::after,
 nav .nav-link.active::after {
   width: 100%;
 }
@@ -200,7 +200,20 @@ nav .nav-link.active::after {
   position: relative;
   z-index: 0;
 }
-
+.slide-bg-image .container{ z-index: 99;}
+.slide-bg-image{
+  position: relative;
+}
+.slide-bg-image:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.4;
+}
 .hero-slider .swiper-slide {
   overflow: hidden;
   color: #fff;
@@ -297,6 +310,7 @@ nav .nav-link.active::after {
   opacity: 0.3;
   background: #fff;
   transition: all 0.2s ease;
+  margin: 2px;
 }
 
 .hero-slider .swiper-pagination-bullet-active {
@@ -364,16 +378,21 @@ nav .nav-link.active::after {
 
 /*---contact ---*/
 .bg-contact {
-  background-image: url('../images/contact.svg');
+  background-image: url('../images/contact.jpg');
   background-color: #eaeefe;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
-.bg-mob-contact {
-  background-image: url('../images/mob-contact.svg');
-  background-color: #eaeefe;
-  background-size: cover;
-  background-position: center;
+.bg-contact:after{
+  content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+    left: 0;
+    background: #ffffff;
+    opacity: 0.5;
 }
 .footer-banner{
     top: -40px;
@@ -384,6 +403,16 @@ a:hover {
   text-decoration: none;
 }
 
+.glass{
+  position: relative;
+	z-index: 2;
+	backdrop-filter: blur(4px);
+	color: #fff;
+	font-size: 30px;
+	padding: 50px;
+	border-radius: 10px;
+	box-shadow: 0 5px 50px rgba(0,0,0,0.5);
+}
 .parallax-section {
   background-image: url('../images/slider1.svg');
   background-color: #eaeefe;

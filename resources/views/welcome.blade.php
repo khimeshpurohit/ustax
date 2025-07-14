@@ -4,6 +4,7 @@
   <section class="hero-slider hero-style overflow-hidden">
     <div class="swiper-container">
       <div class="swiper-wrapper">
+        <!-- slide-start -->
         <div class="swiper-slide">
           <div class="slide-inner slide-bg-image" data-background="images/slider1.svg">
             <div class="container">
@@ -18,12 +19,13 @@
               </div>
             </div>
           </div>
-          <!-- end slide-inner -->
+          
         </div>
         <!-- end swiper-slide -->
 
+        <!-- start slide-inner -->
         <div class="swiper-slide">
-          <div class="slide-inner slide-bg-image" data-background="images/slider1.svg">
+          <div class="slide-inner slide-bg-image" data-background="images/slide2.jpg">
             <div class="container">
               <div data-swiper-parallax="300" class="slide-title">
                 <h2>Lorem Ipsome</h2>
@@ -36,9 +38,68 @@
               </div>
             </div>
           </div>
-          <!-- end slide-inner -->
+          
         </div>
         <!-- end swiper-slide -->
+
+        <!-- start slide-inner -->
+        <div class="swiper-slide">
+          <div class="slide-inner slide-bg-image" data-background="images/slide3.jpg">
+            <div class="container">
+              <div data-swiper-parallax="300" class="slide-title">
+                <h2>Lorem Ipsome</h2>
+              </div>
+
+              <div class="clearfix"></div>
+              <div data-swiper-parallax="500" class="slide-btns">
+                <button class="mt-6 bg-secondary text-white rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Register
+                  now</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <!-- end swiper-slide -->
+
+
+        <!-- start slide-inner -->
+        <div class="swiper-slide">
+          <div class="slide-inner slide-bg-image" data-background="images/slide4.jpg">
+            <div class="container">
+              <div data-swiper-parallax="300" class="slide-title">
+                <h2>Lorem Ipsome</h2>
+              </div>
+
+              <div class="clearfix"></div>
+              <div data-swiper-parallax="500" class="slide-btns">
+                <button class="mt-6 bg-secondary text-white rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Register
+                  now</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <!-- end swiper-slide -->
+
+        <!-- start slide-inner -->
+        <div class="swiper-slide">
+          <div class="slide-inner slide-bg-image" data-background="images/slide5.jpg">
+            <div class="container">
+              <div data-swiper-parallax="300" class="slide-title">
+                <h2>Lorem Ipsome</h2>
+              </div>
+
+              <div class="clearfix"></div>
+              <div data-swiper-parallax="500" class="slide-btns">
+                <button class="mt-6 bg-secondary text-white rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Register
+                  now</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <!-- end swiper-slide -->
+
       </div>
       <!-- end swiper-wrapper -->
 
@@ -64,8 +125,16 @@
         </div>
 
         <p class="text-gray-600 text-base md:text-lg mb-6">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          We specialize in affordable tax preparation services, individual tax filing, small business tax filing, and federal and state tax return services across the United States. Our mission is to simplify your tax filing experience while ensuring you receive maximum eligible refunds and remain IRS-compliant at every step.
+        </p>
+          <p class="text-gray-600 text-base md:text-lg mb-6">
+        Our work is thorough, personalized, and transparent. We take the time to review your tax documents carefully, identify potential deductions and credits, and explain your filings clearly, so you feel confident and informed. Whether you need self-employed tax filing, tax planning, or IRS audit support, we are here to help you every step of the way.
+        </p>
+        <p class="text-gray-600 text-base md:text-lg mb-6">
+        At US Tax Deals, we are committed to ethical practices, accurate tax preparation, and customer-focused service. We handle your taxes with care so you can focus on what truly matters, knowing your financial future is in safe, responsible hands.
+        </p>
+        <p class="text-gray-600 text-base md:text-lg mb-6">
+        Contact us today to experience stress-free, affordable tax filing with a team that values your trust.
         </p>
         <a href="#"
           class="mt-6 bg-secondary text-white  rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">
@@ -94,10 +163,10 @@
   <!--- tag line -->
 
   <section class=" parallax-section bg-fixed bg-cover bg-center bg-no-repeat bg-body-img  container flex items-center justify-center mx-auto mt-6 md:mt-0">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-6 bg-[#042b52] rounded-lg  m-10 md:m-32 max-w-[50%]">
+    <div class="glass flex flex-col md:flex-row items-center justify-between gap-6 rounded-lg  m-10 md:m-32 max-w-[50%]">
       <!-- Quote -->
       <div class="text-white text-center text-lg  md:text-3xl font-semibold leading-relaxed">
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+        “We deliver expert tax filing with personalized, year-round support and smart, experienced guidance — ensuring maximum refunds and complete peace of mind, all at rates that make high-quality tax preparation truly affordable for individuals, families, and small businesses.”
       </div>
 
       <!-- Image -->
@@ -118,8 +187,7 @@
           <div class="h-1 w-16 bg-red-500 mt-2 rounded"></div>
         </div>
         <p class="text-gray-600 text-base md:text-lg max-w-xl mt-4 md:mt-0">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-          standard dummy text...
+          Explore our range of expert tax services designed to make filing easy, accurate, and affordable for individuals and businesses.
         </p>
       </div>
 
@@ -129,49 +197,57 @@
         <!-- Card -->
         <div class="bg-rose-50 p-6 rounded-lg text-center shadow-lg transform hover:-translate-y-2 hover:scale-105 transition-all duration-300">
           <img src="images/we_offer.svg" alt="Icon 1" class="mx-auto mb-4">
-          <h3 class="text-lg font-semibold mb-2">Lorem Ipsum</h3>
+          <h3 class="text-lg font-semibold mb-2">Federal and State Tax Filing</h3>
           <p class="text-sm md:text-base text-gray-600">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+           Easy and accurate federal and state tax filing to ensure you get your maximum refund while staying fully compliant.
           </p>
         </div>
 
         <div class="bg-blue-50 p-6 rounded-lg text-center shadow-lg transform hover:-translate-y-2 hover:scale-105 transition-all duration-300">
           <img src="images/we_offer1.svg" alt="Icon 2" class="mx-auto mb-4">
-          <h3 class="text-lg font-semibold mb-2">Lorem Ipsum</h3>
+          <h3 class="text-lg font-semibold mb-2">Business Tax Filing</h3>
           <p class="text-sm md:text-base text-gray-600">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+            Expert business tax filing services for LLCs, corporations, and sole proprietors, ensuring accurate returns and smart savings.
           </p>
         </div>
 
         <div class="bg-indigo-50 p-6 rounded-lg text-center shadow-lg transform hover:-translate-y-2 hover:scale-105 transition-all duration-300">
           <img src="images/we_offer2.svg" alt="Icon 3" class="mx-auto mb-4">
-          <h3 class="text-lg font-semibold mb-2">Lorem Ipsum</h3>
+          <h3 class="text-lg font-semibold mb-2">FBAR & FATCA Processing</h3>
           <p class="text-sm md:text-base text-gray-600">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+            Stay compliant with streamlined FBAR filing and FATCA reporting for your foreign bank accounts and investments.
           </p>
         </div>
 
         <div class="bg-cyan-50 p-6 rounded-lg text-center shadow-lg transform hover:-translate-y-2 hover:scale-105 transition-all duration-300">
           <img src="images/we_offer3.svg" alt="Icon 4" class="mx-auto mb-4">
-          <h3 class="text-lg font-semibold mb-2">Lorem Ipsum</h3>
+          <h3 class="text-lg font-semibold mb-2">TIN Processing Services</h3>
           <p class="text-sm md:text-base text-gray-600">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+           Fast and reliable ITIN application and renewal services to help you file taxes without a Social Security Number.
           </p>
         </div>
 
         <div class="bg-pink-50 p-6 rounded-lg text-center shadow-lg transform hover:-translate-y-2 hover:scale-105 transition-all duration-300">
           <img src="images/we_offer4.svg" alt="Icon 5" class="mx-auto mb-4">
-          <h3 class="text-lg font-semibold mb-2">Lorem Ipsum</h3>
+          <h3 class="text-lg font-semibold mb-2">Tax Representation Services</h3>
           <p class="text-sm md:text-base text-gray-600">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+            Professional tax representation before the IRS and state tax authorities to resolve notices, audits, and tax issues confidently.
           </p>
         </div>
 
         <div class="bg-amber-50 p-6 rounded-lg text-center shadow-lg transform hover:-translate-y-2 hover:scale-105 transition-all duration-300">
           <img src="images/we_offer5.svg" alt="Icon 6" class="mx-auto mb-4">
-          <h3 class="text-lg font-semibold mb-2">Lorem Ipsum</h3>
+          <h3 class="text-lg font-semibold mb-2">Indian Tax Filing</h3>
           <p class="text-sm md:text-base text-gray-600">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+            Simplified Indian income tax filing for NRIs and residents, ensuring compliance and accurate reporting of your Indian income.
+          </p>
+        </div>
+
+        <div class="bg-rose-50 p-6 rounded-lg text-center shadow-lg transform hover:-translate-y-2 hover:scale-105 transition-all duration-300">
+          <img src="images/we_offer.svg" alt="Icon 1" class="mx-auto mb-4">
+          <h3 class="text-lg font-semibold mb-2">Advanced Tax Planning Services</h3>
+          <p class="text-sm md:text-base text-gray-600">
+           Personalized tax planning strategies to reduce your tax liability and help you plan ahead for a stronger financial future.
           </p>
         </div>
 
@@ -268,55 +344,56 @@
 
         <!-- Icon 1 -->
         <div class="flex flex-col items-center border border-transparent hover:border-red-500 hover:shadow-md transform hover:scale-105 transition-all duration-300 rounded-xl p-4 hover:bg-red-50" data-aos="zoom-in">
-          <img src="images/how_us.svg" alt="Service 1" class="w-20 md:w-30 mb-2">
-          <span class="text-sm md:text-base text-black">Service 1</span>
+          <img src="images/how_us.svg" alt="Service 1" class="w-10 md:w-20 mb-2">
+          <span class="text-sm md:text-base text-black">Affordable Rates</span>
         </div>
 
         <!-- Icon 2 -->
         <div class="flex flex-col items-center border border-transparent hover:border-red-500 hover:shadow-md transform hover:scale-105 transition-all duration-300 rounded-xl p-4 hover:bg-red-50" data-aos="zoom-in">
-          <img src="images/how_us1.svg" alt="Service 2" class="w-20 md:w-30 mb-2">
-          <span class="text-sm md:text-base text-black">Service 2</span>
+          <!-- <img src="images/how_us1.svg" alt="Service 2" class="w-20 md:w-30 mb-2"> -->
+          <p class="text-4xl font-bold w-10 md:w-20 h-10 md:h-20 mb-2 counter" data-target="1000">0</p>
+          <span class="text-sm md:text-base text-black">Trusted Clients </span>
         </div>
 
         <!-- Icon 3 -->
         <div class="flex flex-col items-center border border-transparent hover:border-red-500 hover:shadow-md transform hover:scale-105 transition-all duration-300 rounded-xl p-4 hover:bg-red-50" data-aos="zoom-in">
-          <img src="images/how_us2.svg" alt="Service 3" class=" w-20 md:w-30 mb-2">
-          <span class="text-sm md:text-base text-black">Service 3</span>
+          <img src="images/how_us2.svg" alt="Service 3" class=" w-10 md:w-20 mb-2">
+          <span class="text-sm md:text-base text-black">Expert Guidance </span>
         </div>
 
         <!-- Icon 4 -->
         <div class="flex flex-col items-center border border-transparent hover:border-red-500 hover:shadow-md transform hover:scale-105 transition-all duration-300 rounded-xl p-4 hover:bg-red-50" data-aos="zoom-in">
-          <img src="images/how_us3.svg" alt="Service 4" class="w-20 md:w-30 mb-2">
-          <span class="text-sm md:text-base text-black">Service 4</span>
+          <img src="images/how_us3.svg" alt="Service 4" class="w-10 md:w-20 mb-2">
+          <span class="text-sm md:text-base text-black">Maximum Refunds</span>
         </div>
 
         <!-- Icon 5 -->
         <div class="flex flex-col items-center border border-transparent hover:border-red-500 hover:shadow-md transform hover:scale-105 transition-all duration-300 rounded-xl p-4 hover:bg-red-50" data-aos="zoom-in">
-          <img src="images/how_us4.svg" alt="Service 5" class=" w-20 md:w-30 mb-2">
-          <span class="text-sm md:text-base text-black">Service 5</span>
+          <img src="images/how_us4.svg" alt="Service 5" class=" w-10 md:w-20 mb-2">
+          <span class="text-sm md:text-base text-black">24/7 Support</span>
         </div>
 
       </div>
     </div>
   </section>
   <!-- contact -->
-  <section class="bg-mob-contact md:bg-contact">
+  <section class="bg-contact">
     <div class="container">
      
 
         <!-- Top Content -->
-        <div class="grid md:grid-cols-2  gap-10 relative z-10 pt-4 md:pt-24 pb-16 md:pb-60">
+        <div class="grid md:grid-cols-2 text-black gap-10 relative z-10  py-6 md:py-16">
 
           <!-- Left Side -->
           <div>
-            <h2 class="text-xl mdtext-3xl font-bold text-gray-900 mb-4">
+            <h2 class="text-xl mdtext-3xl font-bold  mb-4">
               Lets Get in <span class="text-secondary">Touch!</span>
             </h2>
-            <p class="text-black mb-4">
-              Have a question or need assistance? Reach out to us via email, phone, or the contact form below. We’re
-              eager to assist you.
+            <p class="text-primary font-medium">Have a question or need assistance?</p>
+            <p class=" mb-4">
+               Let’s get in touch with US Tax Deals. We’re here to provide easy, affordable, and expert tax filing help for individuals and businesses. Just fill out the form, and one of our friendly team members will get back to you soon.
             </p>
-            <p class="text-primary font-medium">We love hearing from you!</p>
+            
 
           </div>
 
@@ -326,17 +403,24 @@
               <div>
                 <label class="block mb-1 text-sm font-medium text-black">Full Name</label>
                 <input type="text"
-                  class="w-full border border-secondary rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary" />
+                  class="w-full border border-primary rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary" />
               </div>
+              <div class="grid grid-cols-2 gap-2">
               <div>
                 <label class="block mb-1 text-sm font-medium text-black">Email</label>
                 <input type="email"
-                  class="w-full border border-secondary rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary" />
+                  class="w-full border border-primary rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary" />
+              </div>
+              <div>
+                <label class="block mb-1 text-sm font-medium text-black">Mobile</label>
+                <input type="email"
+                  class="w-full border border-primary rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary" />
+              </div>
               </div>
               <div>
                 <label class="block mb-1 text-sm font-medium text-black">Message</label>
                 <textarea rows="4"
-                  class="w-full border border-secondary rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
+                  class="w-full border border-primary rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
               </div>
               <button type="submit"
                 class="mt-6 bg-secondary text-white rounded-full cursor-pointer hover:bg-primary transition px-5 py-2">Submit</button>
