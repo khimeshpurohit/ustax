@@ -22,7 +22,7 @@
         </ul>
       </div>
       <div data-aos="fade-left">
-        <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="Tax Filing Icon" class="w-64 mx-auto" />
+        <img src="images/services/1256650.png" alt="Tax Filing Icon" class="w-64 mx-auto" />
       </div>
     </div>
   </section>
@@ -86,7 +86,7 @@
         </ul>
       </div>
       <div data-aos="fade-left">
-        <img src="https://cdn-icons-png.flaticon.com/512/2387/2387635.png" alt="Planning" class="w-64 mx-auto" />
+        <img src="images/services/2387635.png" alt="Planning" class="w-64 mx-auto" />
       </div>
     </div>
   </section>

@@ -244,7 +244,7 @@
         </div>
 
         <div class="bg-rose-50 p-6 rounded-lg text-center shadow-lg transform hover:-translate-y-2 hover:scale-105 transition-all duration-300">
-          <img src="images/we_offer.svg" alt="Icon 1" class="mx-auto mb-4">
+          <img src="images/we_offer6.svg" alt="Icon 1" class="mx-auto mb-4">
           <h3 class="text-lg font-semibold mb-2">Advanced Tax Planning Services</h3>
           <p class="text-sm md:text-base text-gray-600">
            Personalized tax planning strategies to reduce your tax liability and help you plan ahead for a stronger financial future.
