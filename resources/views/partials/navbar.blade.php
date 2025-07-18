@@ -36,13 +36,13 @@
               </button>
               <div
                 class="dropdown-panel absolute left-full top-0 mt-0 ml-1 w-48 bg-white border rounded shadow-md hidden">
-                <a href={{ route('individual-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Federal and State Tax Filing</a>
-                <a href={{ route('business-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>FBAR Processing & FATCA Processing</a>
-                <a href={{ route('business-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>ITIN Processing Services</a>
-                <a href={{ route('business-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Tax Representation Services</a>
-                <a href={{ route('business-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Amendment Filing Services     </a>
-                <a href={{ route('business-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Indian Tax Filing Services</a>
-                <a href={{ route('business-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Advanced Tax Planning Services</a>
+                <a href={{ route('federal-state-tax') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Federal and State Tax Filing</a>
+                <a href={{ route('fbar-fatca-processing') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>FBAR Processing & FATCA Processing</a>
+                <a href={{ route('itin-processing') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>ITIN Processing Services</a>
+                <a href={{ route('tax-representation') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Tax Representation Services</a>
+                <a href={{ route('amendment-filing') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Amendment Filing Services     </a>
+                <a href={{ route('indian-tax') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Indian Tax Filing Services</a>
+                <a href={{ route('advanced-tax') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Advanced Tax Planning Services</a>
               </div>
             </div>
             <!-- Nested Dropdown -->
@@ -57,9 +57,9 @@
               </button>
               <div
                 class="dropdown-panel absolute left-full top-0 mt-0 ml-1 w-48 bg-white border rounded shadow-md hidden">
-                <a href={{ route('individual-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Entity Formation Services</a>
-                <a href={{ route('business-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Corporate Tax Filing Services</a>
-                <a href={{ route('business-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Limited Liability Company (LLC) Services</a>
+                <a href={{ route('entity-formation') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Entity Formation Services</a>
+                <a href={{ route('corporate-tax') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Corporate Tax Filing Services</a>
+                <a href={{ route('limited-liability-company') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Limited Liability Company (LLC) Services</a>
               </div>
             </div>
           </div>
@@ -241,13 +241,13 @@
               </svg>
             </button>
             <div class="dropdown-panel pl-4 mt-2 space-y-2 hidden">
-              <a href={{ route('individual-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Federal and State Tax Filing</a>
-                <a href={{ route('business-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>FBAR Processing & FATCA Processing</a>
-                <a href={{ route('business-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>ITIN Processing Services</a>
-                <a href={{ route('business-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Tax Representation Services</a>
-                <a href={{ route('business-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Amendment Filing Services     </a>
-                <a href={{ route('business-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Indian Tax Filing Services</a>
-                <a href={{ route('business-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Advanced Tax Planning Services</a>
+              <a href={{ route('federal-state-tax') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Federal and State Tax Filing</a>
+                <a href={{ route('fbar-fatca-processing') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>FBAR Processing & FATCA Processing</a>
+                <a href={{ route('itin-processing') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>ITIN Processing Services</a>
+                <a href={{ route('tax-representation') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Tax Representation Services</a>
+                <a href={{ route('amendment-filing') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Amendment Filing Services     </a>
+                <a href={{ route('indian-tax') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Indian Tax Filing Services</a>
+                <a href={{ route('advanced-tax') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Advanced Tax Planning Services</a>
             </div>
           </div>
           <!-- Nested Dropdown -->
@@ -260,9 +260,9 @@
               </svg>
             </button>
             <div class="dropdown-panel pl-4 mt-2 space-y-2 hidden">
-                 <a href={{ route('individual-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Entity Formation Services</a>
-                <a href={{ route('business-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Corporate Tax Filing Services</a>
-                <a href={{ route('business-tax-fill') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Limited Liability Company (LLC) Services</a>
+                 <a href={{ route('entity-formation') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Entity Formation Services</a>
+                <a href={{ route('corporate-tax') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Corporate Tax Filing Services</a>
+                <a href={{ route('limited-liability-company') }} class="block px-4 py-2 hover:bg-gray-100" wire:navigate>Limited Liability Company (LLC) Services</a>
             </div>
           </div>
         </div>
