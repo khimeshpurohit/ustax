@@ -27,6 +27,46 @@ Route::get('/business-tax-fill', function () {
     return view('business-tax-fill');
 })->name('business-tax-fill');
 
+Route::get('/federal-state-tax', function () {
+    return view('federal-state-tax');
+})->name('federal-state-tax');
+
+Route::get('/fbar-fatca-processing', function () {
+    return view('fbar-fatca-processing');
+})->name('fbar-fatca-processing');
+
+Route::get('/itin-processing', function () {
+    return view('itin-processing');
+})->name('itin-processing');
+
+Route::get('/tax-representation', function () {
+    return view('tax-representation');
+})->name('tax-representation');
+
+Route::get('/amendment-filing', function () {
+    return view('amendment-filing');
+})->name('amendment-filing');
+
+Route::get('/indian-tax', function () {
+    return view('indian-tax');
+})->name('indian-tax');
+
+Route::get('/advanced-tax', function () {
+    return view('advanced-tax');
+})->name('advanced-tax');
+
+Route::get('/entity-formation', function () {
+    return view('entity-formation');
+})->name('entity-formation');
+
+Route::get('/corporate-tax', function () {
+    return view('corporate-tax');
+})->name('corporate-tax');
+
+Route::get('/limited-liability-company', function () {
+    return view('limited-liability-company');
+})->name('limited-liability-company');
+
 Route::get('/payroll', function () {
     return view('payroll');
 })->name('payroll');
